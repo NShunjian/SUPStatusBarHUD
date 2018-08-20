@@ -63,7 +63,7 @@
 		C653F5C4212A719F007B9DBF /* SUPStatusBarHUD */ = {
 			isa = PBXGroup;
 			children = (
-				C653F5ED212A9CBF007B9DBF /* StatusBarHUD */,
+				C653F5ED212A9CBF007B9DBF /* SUPStatusBarHUD */,
 				C653F5C5212A719F007B9DBF /* AppDelegate.h */,
 				C653F5C6212A719F007B9DBF /* AppDelegate.m */,
 				C653F5C8212A719F007B9DBF /* ViewController.h */,
@@ -77,15 +77,15 @@
 			path = SUPStatusBarHUD;
 			sourceTree = "<group>";
 		};
-		C653F5ED212A9CBF007B9DBF /* StatusBarHUD */ = {
+		C653F5ED212A9CBF007B9DBF /* SUPStatusBarHUD */ = {
 			isa = PBXGroup;
 			children = (
 				C653F5EE212A9CBF007B9DBF /* StatusBarHUD.bundle */,
 				C653F5EF212A9CBF007B9DBF /* SUPStatusBarHUD.h */,
 				C653F5F0212A9CBF007B9DBF /* SUPStatusBarHUD.m */,
 			);
-			name = StatusBarHUD;
-			path = ../../StatusBarHUD;
+			name = SUPStatusBarHUD;
+			path = ../../SUPStatusBarHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
