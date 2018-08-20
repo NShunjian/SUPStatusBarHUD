@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw1-Rs-lNm">
+                                <rect key="frame" x="172" y="120" width="31" height="30"/>
+                                <state key="normal" title="成功">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyu-Ej-QP2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gar-gN-Ymj">
+                                <rect key="frame" x="172" y="174" width="31" height="30"/>
+                                <state key="normal" title="失败">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="error:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wz9-we-QMq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEH-qg-T9D">
+                                <rect key="frame" x="172" y="228" width="31" height="30"/>
+                                <state key="normal" title="加载">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4d-le-avX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-Gk-DEi">
+                                <rect key="frame" x="172" y="285" width="31" height="30"/>
+                                <state key="normal" title="隐藏">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lj1-Ix-zkR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwh-aI-m53">
+                                <rect key="frame" x="157" y="331" width="62" height="30"/>
+                                <state key="normal" title="普通文字">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iik-eM-vpw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iwh-aI-m53" firstAttribute="centerX" secondItem="Vp5-Gk-DEi" secondAttribute="centerX" id="2tU-sm-xQd"/>
+                            <constraint firstItem="iwh-aI-m53" firstAttribute="top" secondItem="Vp5-Gk-DEi" secondAttribute="bottom" constant="16" id="8H6-GF-vX3"/>
+                            <constraint firstItem="QEH-qg-T9D" firstAttribute="top" secondItem="Gar-gN-Ymj" secondAttribute="bottom" constant="24" id="8yE-as-AYV"/>
+                            <constraint firstItem="Vp5-Gk-DEi" firstAttribute="centerX" secondItem="QEH-qg-T9D" secondAttribute="centerX" id="A9J-0P-gry"/>
+                            <constraint firstItem="Gw1-Rs-lNm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="BlF-vV-HFp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iwh-aI-m53" secondAttribute="bottom" constant="306" id="HZi-C6-0zF"/>
+                            <constraint firstItem="Gw1-Rs-lNm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LY8-nz-KRj"/>
+                            <constraint firstItem="QEH-qg-T9D" firstAttribute="centerX" secondItem="Gar-gN-Ymj" secondAttribute="centerX" id="TdW-yV-Dlo"/>
+                            <constraint firstItem="Vp5-Gk-DEi" firstAttribute="top" secondItem="QEH-qg-T9D" secondAttribute="bottom" constant="27" id="gvw-eL-4NH"/>
+                            <constraint firstItem="Gar-gN-Ymj" firstAttribute="centerX" secondItem="Gw1-Rs-lNm" secondAttribute="centerX" id="nFt-me-tdT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
