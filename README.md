@@ -1,11 +1,11 @@
 # SUPStatusBarHUD
-[一个简单好用的状态栏指示器框架]
+[一个简单好用的状态栏指示器框架]()
 
 - pod install :
 
 - pod 'SUPStatusBarHUD'
 
-@interface SUPStatusBarHUD : NSObject
+- @interface SUPStatusBarHUD : NSObject
 /**
  * 显示普通信息
  * @param msg       文字
